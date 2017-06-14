@@ -18,6 +18,7 @@ class ViewController: UIViewController {
         showMessage(strMessage: "increaseNumber clicked !")
         
         intNumber += 1
+        intNumber = checkNumber(intNumber: intNumber)
         showNumber(intNumber: intNumber)
         
         // numberLabel.text = String(intNumber)
@@ -28,6 +29,7 @@ class ViewController: UIViewController {
         showMessage(strMessage: "decreaseNumber clicked !")
 
         intNumber -= 1
+        intNumber = checkNumber(intNumber: intNumber)
         showNumber(intNumber: intNumber)
 
         // numberLabel.text = String(intNumber)
@@ -38,6 +40,7 @@ class ViewController: UIViewController {
         showMessage(strMessage: "resetNumber clicked!")
         
         intNumber = 1
+        intNumber = checkNumber(intNumber: intNumber)
         showNumber(intNumber: intNumber)
 
         // numberLabel.text = String(intNumber)
@@ -49,6 +52,23 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     } // End Main method
+    
+    func checkNumber(intNumber: Int) -> Int {
+        var intResult = intNumber
+        
+        // At 11
+        if intNumber == 11 {
+            intResult = -10
+        }
+        
+        // At -11
+        
+        if intNumber == -11 {
+            intResult = 10
+        }
+        
+        return intResult
+    }
     
     func showNumber(intNumber: Int) -> Void {
         let strNumber = String(intNumber)
