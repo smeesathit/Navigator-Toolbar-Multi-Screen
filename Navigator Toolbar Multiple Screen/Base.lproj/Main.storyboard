@@ -51,7 +51,11 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="DiJ-GR-jsA"/>
-                                    <barButtonItem systemItem="reply" id="amK-o1-Kbi"/>
+                                    <barButtonItem systemItem="reply" id="amK-o1-Kbi">
+                                        <connections>
+                                            <segue destination="d4K-8N-f3Y" kind="show" id="17b-va-TKU"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Mjz-dH-w1m"/>
                                     <barButtonItem systemItem="trash" id="kBH-yY-cJn"/>
                                 </items>
@@ -73,6 +77,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="138.58695652173915"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="AuQ-6D-zQE">
+            <objects>
+                <viewController id="d4K-8N-f3Y" customClass="SecondViewController" customModule="Navigator_Toolbar_Multiple_Screen" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cvb-h2-YA6"/>
+                        <viewControllerLayoutGuide type="bottom" id="dVL-5a-Bfe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hd7-of-c4a">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V9N-IT-YFr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="787" y="139"/>
         </scene>
     </scenes>
     <resources>
