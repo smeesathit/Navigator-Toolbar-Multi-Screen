@@ -74,6 +74,7 @@ class ViewController: UIViewController {
         let strNumber = String(intNumber)
         numberLabel.text = strNumber
     }
+    
     // Show message on console
     func showMessage(strMessage: String) -> Void {
         print("Message ==> \(strMessage)")

@@ -89,12 +89,57 @@
                     <view key="view" contentMode="scaleToFill" id="Hd7-of-c4a">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DIt-jy-nnC">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Second Screen" id="zGX-gn-PT2">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="rewind" id="gas-vF-voW">
+                                            <connections>
+                                                <action selector="decreaseNumberText:" destination="d4K-8N-f3Y" id="dYj-cN-IfG"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="fastForward" id="QD1-ec-OAO">
+                                            <connections>
+                                                <action selector="increaseNumberText:" destination="d4K-8N-f3Y" id="TTC-AP-0Ae"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ONy-Ds-RS3">
+                                <rect key="frame" x="0.0" y="692" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Item" id="O3U-Xr-hBk"/>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="One" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZM-uF-9JB">
+                                <rect key="frame" x="116.66666666666669" y="172" width="181" height="392"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180.66999999999999" id="6Zm-pa-pCh"/>
+                                    <constraint firstAttribute="height" constant="392" id="xep-Cd-o5c"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qZM-uF-9JB" firstAttribute="centerY" secondItem="Hd7-of-c4a" secondAttribute="centerY" id="DQR-ds-QEj"/>
+                            <constraint firstItem="qZM-uF-9JB" firstAttribute="centerX" secondItem="Hd7-of-c4a" secondAttribute="centerX" id="P1f-bo-G8Y"/>
+                            <constraint firstItem="qZM-uF-9JB" firstAttribute="centerX" secondItem="Hd7-of-c4a" secondAttribute="centerX" id="PCy-Dp-zbE"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="numberTextLabel" destination="qZM-uF-9JB" id="jiX-Vm-ck3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V9N-IT-YFr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="787" y="139"/>
+            <point key="canvasLocation" x="850.72463768115949" y="138.58695652173915"/>
         </scene>
     </scenes>
     <resources>
