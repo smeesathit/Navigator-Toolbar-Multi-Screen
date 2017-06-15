@@ -15,7 +15,8 @@ class SecondViewController: UIViewController {
     
     
     @IBAction func decreaseNumberText(_ sender: Any) {
-        // if index greater then 0 decrease index by 1
+        // At first array element
+        // index greater then 0 decrease index by 1
         if intIndex > 0  {
             intIndex -= 1
             
@@ -29,9 +30,9 @@ class SecondViewController: UIViewController {
     }
     
     
-
     @IBAction func increaseNumberText(_ sender: Any) {
-        // if index of element before lass increase index by 1
+        // At last array element
+        // index of element before last increase index by 1
         // if check at last element will cause because we increase index before using array
         // therefore, index out of bound error occurs
         if intIndex < strNumberArray.count - 1 {
